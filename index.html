@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: sans-serif, Arial, Helvetica;
+    }
+
+    main {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 40fr 60fr;
+      grid-template-areas: 'sec1 sec2';
+      height: fit-content;
+
+      background-color: #d3d3d3;
+      /* border: 1px solid #fff; */
+
+      margin: 0 auto;
+      width: 75vw;
+      /* box-shadow: 0 0 8px 2px gray; */
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 8px #eee;
+      /* padding-top: .14em; */
+    }
+
+    .sec1,
+    .sec2 {
+      padding: 2em;
+    }
+
+    .sec1 {
+      background-color: #282525;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .sec2 {
+      grid-area: 'sec1';
+      padding-top: 8em;
+      padding-left: 4em;
+    }
+
+    img {
+      display: block;
+      border-radius: 50%;
+      width: 24em;
+      margin: auto;
+      border: 3px solid #00FFFF;
+      padding: 1em;
+      margin-bottom: 3em;
+    }
+
+    h2 {
+      color: #0767f7;
+      font-weight: bold;
+      margin: 2.4rem;
+      font-size: xx-large;
+    }
+
+    .info {
+      color: #fff;
+      list-style-type: none;
+      margin-left: 2.8em;
+      font-size: larger;
+      width: 80%;
+    }
+
+    .info li {
+      margin: .6em 0;
+      text-align: left;
+    }
+
+    progress {
+      accent-color: #0767f7;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 6em;
+      color: #282525;
+      text-shadow: 1px 2px 8px gray;
+    }
+
+    .job-title {
+      color: lightslategray;
+      list-style-type: none;
+      font-size: larger;
+    }
+
+    .work-experience-label {
+      display: inline-block;
+      font-weight: bold;
+      font-size: xx-large;
+      color: #282525;
+      margin-top: 2em;
+      margin-bottom: 1.4em;
+      border-left: 8px solid #0767f7;
+      padding-left: .4em;
+    }
+
+    .work-experience h2 {
+      color: #282525;
+      margin: .6em 0;
+      font-size: 1.4em;
+      border-left: 6px solid #006eff;
+      padding-left: .4em;
+    }
+
+    .work-experience p {
+      margin-bottom: 1.4em;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="sec1">
+
+      <img src="image.jpg" alt="picture">
+
+      <h2>Contact</h2>
+      <ul class="contact-info info">
+        <li>Email : jmtatadv@gmail.com</li>
+        <li>Phone : 09665342470</li>
+        <li>Address : Panganiban, Gubat, Sorsogon</li>
+      </ul>
+
+      <h2>Education</h2>
+      <ul class="education-info info">
+        <li>
+          Bachelor of Science in Information Technology – Graduated in Sorsogon State University Bulan-Campus 
+        </li>
+        <li>
+          Gubat National High School - Gubat, Sorsogon
+        </li>
+        <li>
+          Gubat North Central School - Gubat Sorsogon
+        </li>
+      </ul>
+
+      <h2>Skills</h2>
+      <ul class="skills-info info">
+        <li>
+          Skill 1 <br>
+          <progress value="80" max="100"></progress>
+        </li>
+        <li>
+          Skill 2 <br>
+          <progress value="80" max="100"></progress>
+        </li>
+        <li>
+          Skill 3
+          <br>
+          <progress value="80" max="100"></progress>
+        </li>
+      </ul>
+    </section>
+    <section class="sec2">
+      <h1>John Michael De Vera</h1>
+      <label class="job-title">Bachelor of Science in Information Technology</label>
+      <br> <br>
+      <hr>
+
+      <span class="work-experience-label">Work Experience</span>
+      <div class="work-experience">
+        <h2>Experience 1</h2>
+        <p>Senior Software Engineer | TechInnovate Solutions | San Francisco, CA
+          June 2020 - Present
+          
+
+          Led the development and deployment of a cloud-based customer relationship management (CRM) platform, improving client engagement by 30%.
+          Managed a team of 8 engineers, ensuring project milestones were met and quality standards maintained.
+          Spearheaded the migration of legacy systems to microservices architecture, enhancing system scalability and reducing downtime by 40%.
+          Conducted code reviews and implemented best practices, resulting in a 25% reduction in bugs and improved code maintainability. </p>
+        <h2>Experience 2</h2>
+        <p>IT Project Manager | Nexus Technologies | New York, NY
+          January 2017 - May 2020
+          
+          Directed multiple IT projects from initiation to closure, ensuring on-time delivery and adherence to budget constraints.
+          Collaborated with cross-functional teams to define project scope, objectives, and deliverables.
+          Implemented Agile methodologies, leading to a 35% increase in team productivity and project efficiency.
+          Facilitated communication between stakeholders and technical teams, ensuring alignment and clarity on project goals.
+          </p>
+        <h2>Experience 3</h2>
+        <p>Systems Administrator | CyberCore Enterprises | Austin, TX
+          March 2014 - December 2016
+          
+          Administered and maintained enterprise-wide network infrastructure, supporting over 500 users.
+          Devised and executed disaster recovery plans, reducing potential downtime and data loss risk by 50%.
+          Monitored system performance and implemented upgrades, resulting in a 20% increase in network speed and reliability.
+          Provided technical support and training to staff, improving overall IT literacy and reducing helpdesk tickets by 15%.
+          </p>
+        <h2>Experience 4</h2>
+        <p>IT Support Specialist | InfoSys Solutions | Chicago, IL
+          June 2011 - February 2014
+          
+          Delivered technical support for hardware, software, and network issues, maintaining a 95% customer satisfaction rate.
+          Developed and maintained documentation for IT processes and troubleshooting procedures.
+          Assisted in the deployment of new IT systems and software, ensuring seamless integration and minimal disruption.
+          Conducted regular system audits and security checks, enhancing data protection and compliance with industry standards.</p>
